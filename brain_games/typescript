@@ -1,0 +1,435 @@
+Script started on Wed Nov 22 05:38:09 2023
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[Jfanayzam@MacBook-Air-Fanayzam brain_games % [K[?2004hccd c scripts[1m/[0m[0m [?2004l
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[Jfanayzam@MacBook-Air-Fanayzam scripts % [K[?2004hlls[?2004l
+__pycache__	_init_.py	brain_even.py	brain_games.py
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[Jfanayzam@MacBook-Air-Fanayzam scripts % [K[?2004hvvim brain_games.py[1m [0m[0m [?2004l
+[?1049h[>4;2m[?1h=[?2004h[?1004h[1;25r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[25;1H"brain_games.py" 12L, 179B[2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[1;1H#!/usr/bin/env python3[2;1H[K[3;1Hfrom brain_games.cli import welcome_user[3;41H[K[6;1Hdef main():
+    print('Welcome to the Brain Games!')
+    welcome_user()
+
+
+if __name__ == '__main__':
+    main()
+[94m~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [24;1H~                                                                               [1;1H[?25h[?4m[?12$p[?25l[m[25;1H[K[25;1H:[?25hq[?25l[?2004l[>4;m[23;2t[23;1t[25;1H[K[25;1H[?1004l[?2004l[?1l>[?1049l[?25h[>4;m[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[Jfanayzam@MacBook-Air-Fanayzam scripts % [K[?2004hlls[?2004l
+__pycache__	_init_.py	brain_even.py	brain_games.py
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[Jfanayzam@MacBook-Air-Fanayzam scripts % [K[?2004hvvim brain_even.py[1m [0m[0m [?2004l
+[?1049h[>4;2m[?1h=[?2004h[?1004h[1;25r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[25;1H"brain_even.py" 22L, 660B[2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[1;1H#!/usr/bin/env python3[2;1H[K[3;1Hfrom random import randint[3;27H[K[5;1Himport prompt
+
+ran = 0
+count = 0
+name = prompt.string('May I have your name? ')
+print("Hello, " + str(name) + "!")
+print('Answer "yes" if the number is even, otherwise answer "no".')
+while count < 3:
+  ran = randint(1, 100)
+  answer = prompt.string('Question: '+ str(ran) + '\nYour answer: ')
+  if (answer == 'yes' and int(ran) % 2 == 0) or (answer == 'no' and int(ran) % 22[16;1H != 0):[17;7Hprint('Correct!')[18;7Hcount += 1
+  else:[20;7Hprint("'yes' is wrong answer ;(. Correct answer was 'no'.'\nLet's try agaii[21;1Hn, " + str(name) + "!")[22;7Hbreak
+if count == 3:
+  print("Congratulations, " + str(name) + "!")[1;1H[?25h[?4m[?12$p[?25l[25;1H[1m-- INSERT --[m[25;13H[K[1;1H[?25h
+
+
+
+[?25l[4;24r[24;1H
+[1;25r[24;1H[94m~                                                                               [4;1H[?25h
+[?25l[mf[?25h[?25lr[?25h[?25lo[?25h[?25lm[?25h[?25l [?25h[?25lb[?25h[?25lr[?25h[?25la[?25h[?25li[?25h[?25ln[?25h[?25l_[?25h[?25lg[?25h[?25la[?25h[?25lm[?25h[?25le[?25h[?25ls[?25h[?25l.[?25h[?25lc[?25h[?25ll[?25h[?25li[?25h[?25l [?25h[?25li[?25h[?25lm[?25h[?25lp[?25h[?25lo[?25h[?25lr[?25h[?25lt[?25h[?25l [?25h[?25lw[?25h[?25le[?25h[?25lc[?25h[?25l[5;31H[K[5;31H[?25h[?25ll[?25h[?25lc[?25h[?25lo[?25h[?25ln[?25h[?25le[?25h[?25l[5;35H[K[5;35H[?25h[?25l[5;34H[K[5;34H[?25h[?25lm[?25h[?25le[?25h[?25l_[?25h[?25li[?25h[?25l[5;37H[K[5;37H[?25h[?25lu[?25h[?25ls[?25h[?25le[?25h[?25lr[?25h[?25l[6;24r[6;1H[L[1;25r[6;1H[?25h[?25lf[?25h[?25lr[?25h[?25lo[?25h[?25lm[?25h[?25l [?25h[?25ls[?25h[?25lc[?25h[?25lr[?25h[?25li[?25h[?25lp[?25h[?25lt[?25h[?25ls[?25h[?25l.[?25h[?25lm[?25h[?25la[?25h[?25lo[?25h[?25l[6;16H[K[6;16H[?25h[?25li[?25h[?25ln[?25h[?25l[6;17H[K[6;17H[?25h[?25l[6;16H[K[6;16H[?25h[?25l[6;15H[K[6;15H[?25h[?25l[6;14H[K[6;14H[?25h[?25lb[?25h[?25lr[?25h[?25la[?25h[?25li[?25h[?25ln[?25h[?25l_[?25h[?25lg[?25h[?25la[?25h[?25lm[?25h[?25le[?25h[?25ls[?25h[?25l [?25h[?25li[?25h[?25lm[?25h[?25lp[?25h[?25lo[?25h[?25lr[?25h[?25l [?25h[?25l[?25h[?25l[6;30H[K[6;30H[?25h[?25lr[?25h[?25lt[?25h[?25l [?25h[?25lm[?25h[?25la[?25h[?25li[?25h[?25ln[?25h[?25l[7;24r[7;1H[L[1;25r[7;1H[?25h[?25l[8;24r[8;1H[L[1;25r[8;1H[?25h[?25l[9;24r[9;1H[L[1;25r[9;1H[?25h[?25li[?25h[?25lf[?25h[?25l [?25h[?25l_[?25h[?25l_[?25h[?25ln[?25h[?25la[?25h[?25le[?25h[?25l[9;8H[K[9;8H[?25h[?25lm[?25h[?25le[?25h[?25l-[?25h[?25l-[?25h[?25l[9;11H[K[9;11H[?25h[?25l[9;10H[K[9;10H[?25h[?25l+[?25h[?25l+[?25h[?25l[9;11H[K[9;11H[?25h[?25l[9;10H[K[9;10H[?25h[?25l_[?25h[?25l_[?25h[?25l [?25h[?25l=[?25h[?25l=[?25h[?25l [?25h[?25l'[?25h[?25l_[?25h[?25l_[?25h[?25lm[?25h[?25la[?25h[?25li[?25h[?25ln[?25h[?25l-[?25h[?25l[9;23H[K[9;23H[?25h[?25l_[?25h[?25l_[?25h[?25l'[?25h[?25l:[?25h[?25l[10;24r[10;1H[L[1;25r[24;1H[94m@                                                                               [10;1H[?25h[?25l[8C[?25h[?25l[mm[?25h[?25la[?25h[?25l[10;10H[K[10;10H[?25h[?25l[10;9H[K[10;9H[?25h[?25l[?25h[?25l[9;24r[24;1H
+[1;25r[9;1Hif __name__ == '__main__':[23;1H      print("'yes' is wrong answer ;(. Correct answer was 'no'.'\nLet's try agaii[24;1Hn, " + str(name) + "!")[9;27H[?25h[?25l[10;24r[10;1H[L[1;25r[24;1H[94m@                                                                               [10;1H[?25h[?25l[8C[?25h[?25l[?25h[?25l[m [?25h[?25l [?25h[?25l [?25h[?25l [?25h[?25lm[?25h[?25la[?25h[?25li[?25h[?25ln[?25h[?25l([?25h[?25l[46m()[?25h[?25l[m()[11;8H[?25h[?25l[10;9H[46m()[?25h[?25l[11;24r[m[11;1H[L[1;25r[10;9H()
+[?25h[?25l[10;24r[24;1H
+[1;25r[10;5Hmain[46m()[m[24;1H[94m@                                                                               [10;11H[?25h[?25l[11;24r[m[11;1H[L[1;25r[10;9H()
+[?25h[?25l[10;24r[24;1H
+[1;25r[10;5Hmain[46m()[m[24;1H[94m@                                                                               [10;11H[?25h[?25l[m()[11;8H[?25h[12;10H[13;11H[14;11Hlo, " + st[?25lr[46m([mname[46m)[?25h[?25l([?25h[?25l[m(name)[?25ham[?25l[46m([mname[46m)[?25h[?25l)[?25h[?25l[m(name) [?25h+ "![?25lprint[46m([27C)[?25h[?25l)[?25h[?25l[mprint([14;34H[K[14;34H[?25h[?25l[14;33H[K[14;33H[?25h[?25l[14;32H[K[14;32H[?25h[?25l[14;31H[K[14;31H[?25h[?25l[?25h[?25l[14;29H[K[14;29H[?25h[?25l[14;22H[46m([mname[46m)[?25h[?25l[m([14;27H[K[14;27H[?25h[?25l[14;26H[K[14;26H[?25h[?25l[14;25H[K[14;25H[?25h[?25l[14;24H[K[14;24H[?25h[?25l[14;23H[K[14;23H[?25h[?25l[14;22H[K[14;22H[?25h[?25l[14;21H[K[14;21H[?25h[?25l[14;20H[K[14;20H[?25h[?25l[14;19H[K[14;19H[?25h[?25l[?25h[?25l[14;17H[K[14;17H[?25h[?25l[?25h[?25l[14;15H[K[14;15H[?25h[?25l[?25h[?25l[14;13H[K[14;13H[?25h[?25l[14;12H[K[14;12H[?25h[?25l[14;11H[K[14;11H[?25h[?25l[14;10H[K[14;10H[?25h[?25l[14;9H[K[14;9H[?25h[?25l[14;8H[K[14;8H[?25h[?25l[14;7H[K[14;7H[?25h[?25l[14;6H[K[14;6H[?25h[?25l[14;5H[K[14;5H[?25h[?25l[14;4H[K[14;4H[?25h[?25l[14;3H[K[14;3H[?25h[?25l[14;2H[K[14;2H[?25h[?25l[14;1H[K[14;1H[?25h[?25l[13;24r[24;1H
+[1;25r[13;1Hname = prompt.string[46m([m'May I have your name? '[46m)[m[23;1H      print("'yes' is wrong answer ;(. Correct answer was 'no'.'\nLet's try agaii[24;1Hn, " + str(name) + "!")[13;47H[?25h[?25l[13;21H([13;46H[K[13;46H[?25h[?25l[13;45H[K[13;45H[?25h[?25l[?25h[?25l[13;43H[K[13;43H[?25h[?25l[13;42H[K[13;42H[?25h[?25l[13;41H[K[13;41H[?25h[?25l[13;40H[K[13;40H[?25h[?25l[13;39H[K[13;39H[?25h[?25l[?25h[?25l[13;37H[K[13;37H[?25h[?25l[13;36H[K[13;36H[?25h[?25l[13;35H[K[13;35H[?25h[?25l[13;34H[K[13;34H[?25h[?25l[?25h[?25l[13;32H[K[13;32H[?25h[?25l[13;31H[K[13;31H[?25h[?25l[13;30H[K[13;30H[?25h[?25l[13;29H[K[13;29H[?25h[?25l[?25h[?25l[13;27H[K[13;27H[?25h[?25l[?25h[?25l[13;25H[K[13;25H[?25h[?25l[13;24H[K[13;24H[?25h[?25l[13;23H[K[13;23H[?25h[?25l[13;22H[K[13;22H[?25h[?25l[13;21H[K[13;21H[?25h[?25l[13;20H[K[13;20H[?25h[?25l[13;19H[K[13;19H[?25h[?25l[13;18H[K[13;18H[?25h[?25l[13;17H[K[13;17H[?25h[?25l[13;16H[K[13;16H[?25h[?25l[13;15H[K[13;15H[?25h[?25l[13;14H[K[13;14H[?25h[?25l[13;13H[K[13;13H[?25h[?25l[13;12H[K[13;12H[?25h[?25l[13;11H[K[13;11H[?25h[?25l[13;10H[K[13;10H[?25h[?25l[13;9H[K[13;9H[?25h[?25l[13;8H[K[13;8H[?25h[?25l[?25h[?25l[13;6H[K[13;6H[?25h[?25l[?25h[?25l[13;4H[K[13;4H[?25h[?25l[13;3H[K[13;3H[?25h[?25l[13;2H[K[13;2H[?25h[?25l[13;1H[K[13;1H[?25h[?25lm[?25h[?25la[?25h[?25li[?25h[?25ln[?25h[?25l([?25h[?25l[46m()[?25h[?25l[m()[14;6H[46m([60C)[14;7H[?25h[?25l[13;5H()[m[14;6H([60C)[13;7H[?25h[?25l()[12;7H[?25h[11;7H[10;7H[9;7Ham[?25l[10;9H[46m()[?25h[?25l([?25h[?25l[11;24r[m[11;1H[L[1;25r[10;10H[K[11;1H[46m)[m[24;1H[94m@                                                                               [11;1H[?25h[?25l[10;24r[m[24;1H
+[1;25r[10;1H    main[46m()[m[23;1H      print("'yes' is wrong answer ;(. Correct answer was 'no'.'\nLet's try agaii[24;1Hn, " + str(name) + "!")[10;10H[?25h[?25l[1C[?25h[?25l[11;24r[11;1H[L[1;25r[10;9H()[24;1H[94m@                                                                               [11;1H[?25h
+
+
+
+
+
+
+
+
+
+
+
+[?25l[1;24r[m[24;1H
+[1;25r[23;1H      print("'yes' is wrong answer ;(. Correct answer was 'no'.'\nLet's try agaii[24;1Hn, " + str(name) + "!")[23;1H[?25h[?25l[1;24r[24;1H
+[1;25r[24;7Hbreak[?25h[?25l[1;24r[24;1H
+[1;25r[24;1Hif count == 3:[?25h[?25l[1;24r[24;1H
+[1;25r[24;3Hprint("Congratulations, " + str(name) + "!")[?25h[23;1H[22;1H[20;1H[19;1H[18;1H[17;1H[15;1H[14;1H[13;1H[12;1H[11;1H[10;1H[9;1H[8;1H[7;1H[6;1H[5;1H[4;1H[3;1H[2;1H[1;1H[?25l[1;24r[1;1H[L[1;25r[1;1Himport prompt[?25h[?25l[1;24r[1;1H[L[1;25r[1;1Hfrom random import randint[?25h[?25l[1;24r[1;1H[L[1;25r[1;1H[?25h[?25l[1;24r[1;1H[L[1;25r[1;1H#!/usr/bin/env python3[24;1H[94m@                                                                               [1;1H[?25h
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[?25l[1;24r[m[24;1H
+[1;25r[23;1H      print("'yes' is wrong answer ;(. Correct answer was 'no'.'\nLet's try agaii[24;1Hn, " + str(name) + "!")[23;1H[?25h[?25l[1;24r[24;1H
+[1;25r[24;7Hbreak[?25h[?25l[1;24r[24;1H
+[1;25r[24;1Hif count == 3:[?25h[?25l[1;24r[24;1H
+[1;25r[24;3Hprint("Congratulations, " + str(name) + "!")[?25h[?25l:  print("Congratulations, " + str(name) + "!"):[?25h[?25l  print("Congratulations, " + str(name) + "!")[24;47H[K[24;1H[?25h[25;1H[K[24;1H[?25l[?25h[?25l
+:[?25hwq[?25l[?2004l[>4;m"brain_even.py" 26L, 702B written[23;2t[23;1t
+[?1004l[?2004l[?1l>[?1049l[?25h[>4;m[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[Jfanayzam@MacBook-Air-Fanayzam scripts % [K[?2004hlls[?2004l
+__pycache__	_init_.py	brain_even.py	brain_games.py
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[Jfanayzam@MacBook-Air-Fanayzam scripts % [K[?2004hmmake brain-even[?2004l
+make: *** No rule to make target `brain-even'.  Stop.
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[Jfanayzam@MacBook-Air-Fanayzam scripts % [K[?2004hllsl  ccd ..[?2004l
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[Jfanayzam@MacBook-Air-Fanayzam brain_games % [K[?2004hccd ..[?2004l
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[Jfanayzam@MacBook-Air-Fanayzam python-project-49 % [K[?2004hmmake brain-ene  ven[?2004l
+poetry run brain-even
+[33mWarning: 'brain-even' is an entry point defined in pyproject.toml, but it's not installed as a script. You may get improper `sys.argv[0]`.
+
+The support to run uninstalled scripts will be removed in a future release.
+
+Run `poetry install` to resolve and get rid of this message.
+[39m
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/opt/homebrew/Cellar/python@3.11/3.11.5/Frameworks/Python.framework/Versions/3.11/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/fanayzam/python-project-49/brain_games/scripts/brain_even.py", line 6, in <module>
+    from scripts.brain_games import main
+ModuleNotFoundError: No module named 'scripts'
+make: *** [brain-even] Error 1
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[Jfanayzam@MacBook-Air-Fanayzam python-project-49 % [K[?2004hmmake build[?2004l
+poetry build
+Building [36mhexlet-code[39m ([39;1m0.1.0[39;22m)
+  - Building [34msdist[39m
+  - Built [32mhexlet_code-0.1.0.tar.gz[39m
+  - Building [34mwheel[39m
+  - Built [32mhexlet_code-0.1.0-py3-none-any.whl[39m
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[Jfanayzam@MacBook-Air-Fanayzam python-project-49 % [K[?2004hmmake braon  in-even[?2004l
+poetry run brain-even
+[33mWarning: 'brain-even' is an entry point defined in pyproject.toml, but it's not installed as a script. You may get improper `sys.argv[0]`.
+
+The support to run uninstalled scripts will be removed in a future release.
+
+Run `poetry install` to resolve and get rid of this message.
+[39m
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/opt/homebrew/Cellar/python@3.11/3.11.5/Frameworks/Python.framework/Versions/3.11/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/fanayzam/python-project-49/brain_games/scripts/brain_even.py", line 6, in <module>
+    from scripts.brain_games import main
+ModuleNotFoundError: No module named 'scripts'
+make: *** [brain-even] Error 1
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[Jfanayzam@MacBook-Air-Fanayzam python-project-49 % [K[?2004hlls[?2004l
+Makefile	brain_games	poetry.lock	setup.cfg
+README.md	dist		pyproject.toml
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[Jfanayzam@MacBook-Air-Fanayzam python-project-49 % [K[?2004hccd brain_games[1m/[0m[0m [?2004l
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[Jfanayzam@MacBook-Air-Fanayzam brain_games % [K[?2004hlls[?2004l
+__pycache__	_init_.py	cli.py		scripts		typescript
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[Jfanayzam@MacBook-Air-Fanayzam brain_games % [K[?2004hccd scripts[1m/[0m[0m [?2004l
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[Jfanayzam@MacBook-Air-Fanayzam scripts % [K[?2004hlls[?2004l
+__pycache__	_init_.py	brain_even.py	brain_games.py
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[Jfanayzam@MacBook-Air-Fanayzam scripts % [K[?2004hvvim  v  vvim brain_en ven.py[1m [0m[0m [?2004l
+[?1049h[>4;2m[?1h=[?2004h[?1004h[1;25r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[25;1H"brain_even.py" 26L, 694B[2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[1;1H#!/usr/bin/env python3[2;1H[K[3;1Hfrom random import randint[3;27H[K[4;1Himport prompt
+from brain_games.cli import welcome_user
+from brain_games import main
+
+
+if __name__ == '__main__':
+    main()
+
+ran = 0
+count = 0
+main()
+print('Answer "yes" if the number is even, otherwise answer "no".')
+while count < 3:
+  ran = randint(1, 100)
+  answer = prompt.string('Question: '+ str(ran) + '\nYour answer: ')
+  if (answer == 'yes' and int(ran) % 2 == 0) or (answer == 'no' and int(ran) % 22[20;1H != 0):[21;7Hprint('Correct!')[22;7Hcount += 1
+  else:[24;7Hprint("'yes' is wrong answer ;(. Correct answer was 'no'.'\nLet's try agai[24;1H[94m@                                                                               [1;1H[?25h[?4m[?12$p[?25l[m[25;1H[K[25;1H:[?25hq[?25l[?2004l[>4;m[23;2t[23;1t[25;1H[K[25;1H[?1004l[?2004l[?1l>[?1049l[?25h[>4;m[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[Jfanayzam@MacBook-Air-Fanayzam scripts % [K[?2004hccd ..[?2004l
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[Jfanayzam@MacBook-Air-Fanayzam brain_games % [K[?2004hccd ..[?2004l
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[Jfanayzam@MacBook-Air-Fanayzam python-project-49 % [K[?2004hmmale   ke brain-even[?2004l
+poetry run brain-even
+[33mWarning: 'brain-even' is an entry point defined in pyproject.toml, but it's not installed as a script. You may get improper `sys.argv[0]`.
+
+The support to run uninstalled scripts will be removed in a future release.
+
+Run `poetry install` to resolve and get rid of this message.
+[39m
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/opt/homebrew/Cellar/python@3.11/3.11.5/Frameworks/Python.framework/Versions/3.11/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/fanayzam/python-project-49/brain_games/scripts/brain_even.py", line 6, in <module>
+    from brain_games import main
+ImportError: cannot import name 'main' from 'brain_games' (unknown location)
+make: *** [brain-even] Error 1
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[Jfanayzam@MacBook-Air-Fanayzam python-project-49 % [K[?2004hmake brain-even[?2004l
+poetry run brain-even
+[33mWarning: 'brain-even' is an entry point defined in pyproject.toml, but it's not installed as a script. You may get improper `sys.argv[0]`.
+
+The support to run uninstalled scripts will be removed in a future release.
+
+Run `poetry install` to resolve and get rid of this message.
+[39m
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/opt/homebrew/Cellar/python@3.11/3.11.5/Frameworks/Python.framework/Versions/3.11/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/fanayzam/python-project-49/brain_games/scripts/brain_even.py", line 6, in <module>
+    from scripts.brain_games import main
+ModuleNotFoundError: No module named 'scripts'
+make: *** [brain-even] Error 1
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[Jfanayzam@MacBook-Air-Fanayzam python-project-49 % [K[?2004hmake brain-even[?2004l
+poetry run brain-even
+[33mWarning: 'brain-even' is an entry point defined in pyproject.toml, but it's not installed as a script. You may get improper `sys.argv[0]`.
+
+The support to run uninstalled scripts will be removed in a future release.
+
+Run `poetry install` to resolve and get rid of this message.
+[39m
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/opt/homebrew/Cellar/python@3.11/3.11.5/Frameworks/Python.framework/Versions/3.11/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/fanayzam/python-project-49/brain_games/scripts/brain_even.py", line 6, in <module>
+    import main
+ModuleNotFoundError: No module named 'main'
+make: *** [brain-even] Error 1
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[Jfanayzam@MacBook-Air-Fanayzam python-project-49 % [K[?2004hmake brain-even[?2004l
+poetry run brain-even
+[33mWarning: 'brain-even' is an entry point defined in pyproject.toml, but it's not installed as a script. You may get improper `sys.argv[0]`.
+
+The support to run uninstalled scripts will be removed in a future release.
+
+Run `poetry install` to resolve and get rid of this message.
+[39m
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/opt/homebrew/Cellar/python@3.11/3.11.5/Frameworks/Python.framework/Versions/3.11/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/fanayzam/python-project-49/brain_games/scripts/brain_even.py", line 14, in <module>
+    main()
+    ^^^^
+NameError: name 'main' is not defined. Did you mean: 'min'?
+make: *** [brain-even] Error 1
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[Jfanayzam@MacBook-Air-Fanayzam python-project-49 % [K[?2004hmake brain-even[?2004l
+poetry run brain-even
+[33mWarning: 'brain-even' is an entry point defined in pyproject.toml, but it's not installed as a script. You may get improper `sys.argv[0]`.
+
+The support to run uninstalled scripts will be removed in a future release.
+
+Run `poetry install` to resolve and get rid of this message.
+[39m
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/opt/homebrew/Cellar/python@3.11/3.11.5/Frameworks/Python.framework/Versions/3.11/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/fanayzam/python-project-49/brain_games/scripts/brain_even.py", line 12, in <module>
+    main()
+    ^^^^
+NameError: name 'main' is not defined. Did you mean: 'min'?
+make: *** [brain-even] Error 1
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[Jfanayzam@MacBook-Air-Fanayzam python-project-49 % [K[?2004hmake brain-even[?2004l
+poetry run brain-even
+[33mWarning: 'brain-even' is an entry point defined in pyproject.toml, but it's not installed as a script. You may get improper `sys.argv[0]`.
+
+The support to run uninstalled scripts will be removed in a future release.
+
+Run `poetry install` to resolve and get rid of this message.
+[39m
+Welcome to the Brain Games!
+May I have your name? f
+Hello, f!
+Answer "yes" if the number is even, otherwise answer "no".
+Question: 2
+Your answer: f
+'yes' is wrong answer ;(. Correct answer was 'no'.'
+Let's try again, f!
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+AttributeError: module 'brain_games.scripts.brain_even' has no attribute 'main'
+make: *** [brain-even] Error 1
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[Jfanayzam@MacBook-Air-Fanayzam python-project-49 % [K[?2004hppor t etry install[?2004l
+[34mInstalling dependencies from lock file[39m
+
+No dependencies to install or update
+
+[39;1mInstalling[39;22m the current project: [36mhexlet-code[39m ([39;1m0.1.0[39;22m)[1G[2K[39;1mInstalling[39;22m the current project: [36mhexlet-code[39m ([32m0.1.0[39m)
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[Jfanayzam@MacBook-Air-Fanayzam python-project-49 % [K[?2004hpoetry install[14Dmake brain-even[?2004l
+poetry run brain-even
+Welcome to the Brain Games!
+May I have your name? Alex
+Hello, Alex!
+Answer "yes" if the number is even, otherwise answer "no".
+Question: 99
+Your answer: no
+Correct!
+Question: 82
+Your answer: yes
+Correct!
+Question: 40
+Your answer: yes
+Correct!
+Congratulations, Alex!
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+AttributeError: module 'brain_games.scripts.brain_even' has no attribute 'main'
+make: *** [brain-even] Error 1
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[Jfanayzam@MacBook-Air-Fanayzam python-project-49 % [K[?2004hlls[?2004l
+Makefile	brain_games	poetry.lock	setup.cfg
+README.md	dist		pyproject.toml
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[Jfanayzam@MacBook-Air-Fanayzam python-project-49 % [K[?2004hlsmake brain-even[?2004l
+poetry run brain-even
+Welcome to the Brain Games!
+May I have your name? Alex
+Hello, Alex!
+Answer "yes" if the number is even, otherwise answer "no".
+Question: 23
+Your answer: no
+Correct!
+Question: 33
+Your answer: no
+Correct!
+Question: 63
+Your answer: no
+Correct!
+Congratulations, Alex!
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+AttributeError: module 'brain_games.scripts.brain_even' has no attribute 'main'
+make: *** [brain-even] Error 1
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[Jfanayzam@MacBook-Air-Fanayzam python-project-49 % [K[?2004hmake brain-even[?2004l
+poetry run brain-even
+Welcome to the Brain Games!
+May I have your name? ff
+Hello, ff!
+Answer "yes" if the number is even, otherwise answer "no".
+Question: 98
+Your answer: f
+'yes' is wrong answer ;(. Correct answer was 'no'.'
+Let's try again, ff!
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+AttributeError: module 'brain_games.scripts.brain_even' has no attribute 'main'
+make: *** [brain-even] Error 1
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[Jfanayzam@MacBook-Air-Fanayzam python-project-49 % [K[?2004hппше п  ggit status[?2004l
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   Makefile[m
+	[31mmodified:   brain_games/.DS_Store[m
+	[31mmodified:   brain_games/scripts/.DS_Store[m
+	[31mmodified:   brain_games/scripts/__pycache__/brain_games.cpython-311.pyc[m
+	[31mmodified:   pyproject.toml[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31m.DS_Store[m
+	[31mbrain_games/__pycache__/[m
+	[31mbrain_games/scripts/__pycache__/brain_even.cpython-311.pyc[m
+	[31mbrain_games/scripts/brain_even.py[m
+	[31mbrain_games/typescript[m
+	[31mdist/[m
+	[31mpoetry.lock[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[Jfanayzam@MacBook-Air-Fanayzam python-project-49 % [K[?2004hggit add [7mMakefile[27m[8D[27mM[27ma[27mk[27me[27mf[27mi[27ml[27m e[?2004l
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[Jfanayzam@MacBook-Air-Fanayzam python-project-49 % [K[?2004hgit add Makefile        [7mbrain_games/.DS_Store[27m[21D[27mb[27mr[27ma[27mi[27mn[27m_[27mg[27ma[27mm[27me[27ms[27m/[27m.[27mD[27mS[27m_[27mS[27mt[27mo[27mr[27me[?2004l
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[Jfanayzam@MacBook-Air-Fanayzam python-project-49 % [K[?2004hggit add [7mbrain_games/scripts/__[7mp[7mycache__/brain_games.cpython-311.pyc[27m[K[A[21C[27mb[27mr[27ma[27mi[27mn[27m_[27mg[27ma[27mm[27me[27ms[27m/[27ms[27mc[27mr[27mi[27mp[27mt[27ms[27m/[27m_[27m_p[27my[27mc[27ma[27mc[27mh[27me[27m_[27m_[27m/[27mb[27mr[27ma[27mi[27mn[27m_[27mg[27ma[27mm[27me[27ms[27m.[27mc[27mp[27my[27mt[27mh[27mo[27mn[27m-[27m3[27m1[27m1[27m.[27mp[27my[27mc[?2004l
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[Jfanayzam@MacBook-Air-Fanayzam python-project-49 % [K[?2004hggit aa dd [7mpyproject.toml[27m[14D[27mp[27my[27mp[27mr[27mo[27mj[27me[27mc[27mt[27m.[27mt[27mo[27mm[27ml[?2004l
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[Jfanayzam@MacBook-Air-Fanayzam python-project-49 % [K[?2004hggit add [7mbrain_games/scripts/br[7ma[7min_even.py[27m[K[A[47C[27mb[27mr[27ma[27mi[27mn[27m_[27mg[27ma[27mm[27me[27ms[27m/[27ms[27mc[27mr[27mi[27mp[27mt[27ms[27m/[27mb[27mra[27mi[27mn[27m_[27me[27mv[27me[27mn[27m.[27mp[27my[?2004l
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[Jfanayzam@MacBook-Air-Fanayzam python-project-49 % [K[?2004hggit add [7mbrain_games/typescript[27m [K[A[58C[27mb[27mr[27ma[27mi[27mn[27m_[27mg[27ma[27mm[27me[27ms[27m/[27mt[27my[27mp[27me[27ms[27mc[27mr[27mi[27mp[27mt [K[?2004l
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[Jfanayzam@MacBook-Air-Fanayzam python-project-49 % [K[?2004hggit add [7mpoetry.lock[27m[11D[27mp[27mo[27me[27mt[27mr[27my[27m.[27ml[27mo[27mc[27mk[?2004l
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[Jfanayzam@MacBook-Air-Fanayzam python-project-49 % [K[?2004hggit add [7mbrain_games/__pycache_[7m_[7m/[27m[K[A[56C[27mb[27mr[27ma[27mi[27mn[27m_[27mg[27ma[27mm[27me[27ms[27m/[27m_[27m_[27mp[27my[27mc[27ma[27mc[27mh[27me[27m__[27m/[?2004l
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[Jfanayzam@MacBook-Air-Fanayzam python-project-49 % [K[?2004hggit add [7mdist/[27m[27md[27mi[27ms[27mt[27m/[?2004l
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[Jfanayzam@MacBook-Air-Fanayzam python-project-49 % [K[?2004hggit at  status[?2004l
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mmodified:   Makefile[m
+	[32mmodified:   brain_games/.DS_Store[m
+	[32mnew file:   brain_games/__pycache__/cli.cpython-311.pyc[m
+	[32mmodified:   brain_games/scripts/__pycache__/brain_games.cpython-311.pyc[m
+	[32mnew file:   brain_games/scripts/brain_even.py[m
+	[32mnew file:   brain_games/typescript[m
+	[32mnew file:   dist/hexlet_code-0.1.0-py3-none-any.whl[m
+	[32mnew file:   dist/hexlet_code-0.1.0.tar.gz[m
+	[32mnew file:   poetry.lock[m
+	[32mmodified:   pyproject.toml[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   brain_games/scripts/.DS_Store[m
+	[31mmodified:   brain_games/typescript[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31m.DS_Store[m
+	[31mbrain_games/scripts/__pycache__/brain_even.cpython-311.pyc[m
+
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[Jfanayzam@MacBook-Air-Fanayzam python-project-49 % [K[?2004hggit aa  dd [7mbrain_games/scripts/.D[7mS[7m_Store[27m[K[A[51C[27mb[27mr[27ma[27mi[27mn[27m_[27mg[27ma[27mm[27me[27ms[27m/[27ms[27mc[27mr[27mi[27mp[27mt[27ms[27m/[27m.[27mDS[27m_[27mS[27mt[27mo[27mr[27me[?2004l
+[1m[7m%[27m[1m[0m                                                                                [0m[27m[24m[Jfanayzam@MacBook-Air-Fanayzam python-project-49 % [K[?2004h
